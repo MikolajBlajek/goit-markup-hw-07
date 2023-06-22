@@ -1,0 +1,538 @@
+
+ :root{
+    --focus-color: #2196F3; 
+    --fill-color:#2196F3; 
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1)
+ } 
+  
+  
+  body { 
+    font-family:"Roboto"; sans-serif; 
+    color: #212121;
+ }  
+  
+.brand-logo, .brand-logo-footer { 
+    text-decoration:none; 
+    display: flex;
+ }
+
+.first-half-webstudio { 
+    display: inline-block;
+    font-family:Raleway;
+    font-weight: 700;
+    font-size: 26px; 
+    line-height: 2.25em;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.second-half-webstudio { 
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 2.25em;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.second-half-webstudio2 {
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 2.25em;
+    letter-spacing: 0.03em;
+    color: #fff; 
+    
+}
+.link-style-agency, 
+.link-style-portfolio,
+.link-style-contact {    
+    font-family: Roboto;
+    text-decoration: none; 
+    font-weight: 500; 
+    font-size: 14px;   
+    line-height: 0.88em; 
+    letter-spacing: 0.03em; 
+    color: #212121;
+}  
+
+.link-contact-mail-header, 
+.link-contact-phone-header { 
+    text-decoration: none;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.88em;
+    letter-spacing: 0.03em;
+} 
+ 
+.link-style-agency:hover, 
+.link-style-portfolio:hover,
+.link-style-contact:hover,  
+.hover-header-mail:hover, 
+.hover-header-phone:hover, 
+.link-contact-mail-header:hover, 
+.link-contact-phone-header:hover{  
+    color: #2196F3; 
+    fill: #2196F3;
+} 
+ 
+.bth1 { 
+    background-color: #2196F3; 
+    color: #ffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88em;
+    cursor: pointer; 
+    border-radius: 4px; 
+    box-shadow: 0px 4px 4px rgba(0,0,0, 0.15); 
+    border: 0;
+}
+
+.bth2 {
+    font-weight: 500; 
+    font-size: 16px; 
+    line-height: 1.88em; 
+    cursor: pointer; 
+    background-color: rgba(245, 244, 250, 1) ; 
+    border: #fff; 
+    border-radius: 4px;
+}  
+
+.bth2:hover, .bth2:focus { 
+    background-color: #2196F3; 
+    color: white; 
+} 
+ 
+.link, .list-bth, .list-adress, .list-works, .list-text, 
+.list-team, .list-expert { 
+    list-style-type: none; 
+}  
+
+.list-works1 {  
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 0.88em; 
+    letter-spacing: 0.06em;  
+    padding-left: 24px;
+} 
+
+.list-works2 {  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.88em; 
+    letter-spacing: 0.03em;  
+    color: #757575; 
+    padding-left: 24px;
+} 
+
+.container-footer {
+    background-color: #2f303a; 
+}
+
+.adress-footer1 {  
+    font-style: normal;
+    text-decoration: none;
+    color: #ffff;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+}
+
+.large-text {  
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.75em;
+    letter-spacing: 0.06em;
+    color: #ffff;  
+}
+
+.list-text1 { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+}
+ 
+.list-text2 { 
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing 0.03em;; 
+    color: #757575;
+} 
+
+.team, .expert {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.63em;
+    letter-spacing: 0.03em;
+} 
+ 
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18em;
+    letter-spacing: 0.03em; 
+} 
+.team-expert { 
+    font-size: 16px;
+    line-height: 1.18em;
+    letter-spacing: 0.03em; 
+    color: #757575;
+} 
+  
+/* ======backdrop modal.js===== */ 
+ 
+.is-hidden{
+     opacity: 0; 
+     visibility: hidden; 
+     pointer-events: none;
+} 
+ 
+#modal-backdrop{  
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 2;  
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    position: fixed; 
+}
+ 
+.modal{
+    display: flex;
+    justify-content: center;
+    width: 528px;
+    min-height: 581px;
+    position: absolute;
+    top: 221px;
+    left: 536px;
+    right: 536px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.close-bth{  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+    width: 30px; 
+    height: 30px; 
+    top: 8px;
+    right: 8px; 
+    position: absolute; 
+    cursor: pointer;  
+    border-radius: 50%;
+} 
+ 
+/*=== Modal Reg Style ===*/
+  
+.title-form{ 
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 23px; 
+    margin-top: 40px;
+    margin-bottom: 2px;
+    font-style: 700;
+}
+
+
+.icon-person-input { 
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 15px;
+    transform: translateY(-50%);
+    border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+ 
+.icon-person-input:hover{
+     fill: var(--fill-color);
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus,
+.form-input:hover {
+    border: 1px solid #2196f3;
+}
+  
+.label-name:focus-within > .icon-person-input, 
+.label-phone:focus-within >.icon-person-input, 
+.label-mail:focus-within >.icon-person-input { 
+    fill: #2196f3;
+}
+
+ 
+/*==============================*/
+
+.form-input-text:focus-within {
+    border: 1px solid #2196f3;
+    outline: none;
+}
+
+.form-input-text{ 
+    width: 448px; 
+    height: 138px; 
+    border-radius: 4px; 
+    border-color:  1px solid rgba(33, 33, 33, 0.2);  
+    resize: none;
+}
+  
+textarea::placeholder{ 
+    font-size: 12px;
+    font-style: 'roboto';
+    font-weight: 400; 
+    line-height: 14.06px; 
+    letter-spacing: 1%;
+    padding-left: 16px; 
+    padding-top: 12px;
+}
+.input-box{
+    display: block; 
+    width: 100%; 
+    max-width: 100%; 
+    position: relative; 
+    margin-bottom: 10px; 
+}
+ 
+.label-checkbox-policy{
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+    font-style: normal; 
+    max-height: 24px; 
+    font-weight: 400; 
+    font-size: 14px; 
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575; 
+    padding-bottom: 4px; 
+    margin-left: 22px; 
+    margin-bottom: 30px; 
+    margin-top: 20px;  
+    cursor: pointer; 
+    text-align: center;
+}
+  
+
+.checkbox-input {
+    position: absolute; 
+    appearance: none;
+  } 
+
+.checkbox-icon {
+    display: inline-block; 
+    border: 1px solid #212121;
+    border-radius: 2px;
+    vertical-align: sub;
+    transition-property: background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+    fill: #fff; 
+    background-color:#fff; 
+    margin-right: 8px;
+  }
+
+.checkbox-vector { 
+    display: block;
+    width: 16px;
+    height: 15px;
+  } 
+
+.checkbox-text >a { 
+    color: rgba(33, 150, 243, 1);
+} 
+ 
+input.checkbox-input:checked +.checkbox-icon {
+    border: 1px solid var(--fill-color) ; 
+    fill: #fff; 
+    background-color: var(--fill-color);
+}
+
+
+
+.buttom-form-send{ 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 40px;
+}
+
+.button-main-page{  
+    width: 200px; 
+    height: 50px; 
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; 
+    color: #fff;
+    cursor: pointer; 
+    font-weight: 700; 
+    font-size: 16px; 
+    line-height: 188%;
+}    
+ 
+/*=== Newsletter footer==*/  
+.footer-newsletter{ 
+    margin-left: 78px;
+} 
+
+ .box-send-newsletter{
+     display: inline-flex;
+ } 
+
+ .text-newsletter-footer{
+    display: flex;
+    font-weight: 700; 
+    font-size: 14px;
+    line-height: 16px; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 20px;
+ } 
+
+  .email-window-footer > input{ 
+    display: flex;
+    align-items: center; 
+    width: 358px; 
+    height: 50px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15); 
+    border-radius: 4px; 
+    background-color: #2f303a; 
+    letter-spacing: 0.03em; 
+    color: rgba(255, 255, 255, 0.6); 
+    padding-left: 16px;
+  } 
+   
+  .buttom-send-newsletter{ 
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;   
+    margin-left: 12px;
+  }
+ 
+  .buttom-send-newsletter > button{  
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px; 
+    height: 50px;
+    background-color: #2196F3; 
+    box-shadow: rgba(0, 0, 0, 0.15); 
+    border-radius: 4px; 
+    color: #fff;
+    cursor: pointer; 
+    font-family: 'Roboto';
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 16px;
+    line-height: 188%; 
+    padding-left: 42px;
+  } 
+  .send-icon-button{
+    display: flex; 
+    position: absolute; 
+    margin-top: 13px; 
+    margin-left: 24px;  
+    margin-right: 28px;
+    fill: #fff;
+  } 
+
+
+/* ==== APP ====*/  
+.app{
+   position: relative;
+   width: 370px;
+   height: 294px;
+   margin: 0 auto;
+} 
+
+.app-1{ 
+    position: absolute;
+    top: 224px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    
+} 
+
+.app-1 > p{ 
+    color: #fff; 
+    font-weight: 700;  
+    font-size: 14px; 
+    line-height: 16px;  
+    text-align: center; 
+    letter-spacing: 0.03em; 
+    text-transform: uppercase; 
+    margin-top: 27px;
+}
+
+/* ==== Overlay ===*/
+    
+.box-overlay{  
+    position: relative;
+    overflow: hidden; 
+    width: 370px; 
+    height: 294px; 
+    margin: 0 auto;
+}
+.overlay-portfolio{ 
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9); 
+    align-content: center;
+
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out; 
+} 
+ 
+.box-overlay:hover .overlay-portfolio {
+    transform: translatex(0);
+} 
+ 
+.overlay-portfolio > p{ 
+    color: #fff; 
+    font-size: 18px; 
+    line-height: 28px; 
+    letter-spacing: 0.03em; 
+    margin-top: 49px; 
+    margin-left: 24px; 
+    margin-right: 45px; 
+} 
+
+/* ====UNDERSCORE NAV ====*/ 
+ 
+.underscore{ 
+    position: relative; 
+    top: 15px; 
+    border-radius: 2px; 
+    background-color: #2196F3;
+} 
+ 
+.underscore::after{ 
+    content:""; 
+    position: absolute;
+    left: 0; 
+    top: 9px; 
+    display: block; 
+    width: 53px; 
+    height: 4px;
+    background-color: #2196F3;
+}
