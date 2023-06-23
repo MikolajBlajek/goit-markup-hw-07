@@ -6,41 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>  
     <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css"> 
-    <link rel="stylesheet" href="./css/page-layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 </head> 
 <body> 
-    <header>
-       <div class="container" > 
-            <div class="navigation-list">
-                <div class="container-logo">
-                    <a class="brand-logo" href="./index.html"><span class="first-half-webstudio">Web</span><span class="second-half-webstudio">Studio</span></a>
+    <header >
+       <div class="container-header" > 
+            <div class="container-header__navigation">
+                <div class="containet-header__logo">
+                    <a class="container-header__brand-logo" href="./index.html"><span class="container-header__brand-logo__part1">Web</span><span class="container-header__brand-logo__part2">Studio</span></a>
                 </div> 
-                <nav>
-                    <ul class="link">
+                <nav class="container-header__link">
+                    <ul class="container-header__link-list">
                         <li> 
-                            <a class="link-style-agency" href="./index.html">Agencja</a>  
-                            <div class="underscore"></div>
+                            <a class="container-header__card-agency" href="./index.html">Agencja</a>  
+                            <div class="container-header__underscore"></div>
                         </li>
-                        <li><a class="link-style-portfolio" href="./portfolio.html">Portfolio</a></li>
-                        <li><a class="link-style-contact" href="#">Kontakt</a></li> 
+                        <li><a class="container-header__card-portfolio" href="./portfolio.html">Portfolio</a></li>
+                        <li><a class="container-header__card-contact" href="#">Kontakt</a></li> 
                     </ul> 
                 </nav>
-                <div class="contact-link">   
-                    <div class="hover-header-mail">
-                        <svg class="header-svg-mail" width="16" height="12">
+                <div class="container-header__contact">   
+                    <div class="container-header__icon">
+                        <svg class="container-header__icon-mail" width="16" height="12">
                             <use href="./images/images4/symbol-defs.svg#icon-envelope"></use>
                         </svg>
-                        <a class="link-contact-mail-header" href="mailto:info@devstudio.com">info@devstudio.com</a>  
+                        <a class="container-header__link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>  
                     </div> 
-                    <div class="hover-header-phone">
-                        <svg class="header-svg-phone" width="10" height="16">
+                    <div class="container-header__icon">
+                        <svg class="container-header__icon-phone" width="10" height="16">
                             <use href="./images/images4/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
-                        <a class="link-contact-phone-header" href="tel:+48111111111">+48 111 111 111</a>  
+                        <a class="container-header__link-phone" href="tel:+48111111111">+48 111 111 111</a>  
                     </div>
                 </div>
             </div>
