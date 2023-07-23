@@ -1,0 +1,48 @@
+.footer-newsletter {
+    margin-left: 78px;
+
+    &__text {
+        color: $mainwhiteColor;
+        font-size: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+}
+
+.footer-newsletter__box-send {
+
+    & form {
+
+        .footer-email-window {
+
+            &__input {
+                width: 358px;
+                height: 50px;
+                border-radius: 4px;
+                background-color: $footerbackgroundcolor;
+
+
+            }
+        }
+    }
+}
+
+.footer-buttom-send-newsletter {
+
+    .buttom-newsletter {
+        width: 200px;
+        height: 50px;
+        background-color: $mainblueColorpage;
+        color: $mainwhiteColor;
+
+    }
+
+    .send-icon-buttom {
+        fill: $mainwhiteColor;
+
+    }
+}

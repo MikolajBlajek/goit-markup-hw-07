@@ -1,0 +1,75 @@
+.header-navigation{  
+    margin-left: 93px;
+     
+    &__list{  
+        list-style-type: none;  
+        display: flex;
+ 
+        &__card-agency{  
+            display: inline;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 0.88em;
+            letter-spacing: 0.03em; 
+            padding-right: 46px; 
+             
+            font-family: Roboto;   
+            color: $mainblackColorpage;
+        }
+
+
+        &__underscore{  
+            position: relative;
+            top: 15px;
+            border-radius: 2px;
+        }  
+
+        &__card-portfolio{  
+            display: inline;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 0.88em;
+            letter-spacing: 0.03em; 
+            padding-right: 46px; 
+             
+            font-family: Roboto;   
+            color: $mainblackColorpage;
+        }
+         
+        &__card-contact{ 
+            display: inline;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 0.88em;
+            letter-spacing: 0.03em;  
+            margin-right: 345px; 
+             
+            font-family: Roboto;   
+            color: $mainblackColorpage;
+        }
+    }
+} 
+
+.header-navigation__list__card-agency:hover,
+.header-navigation__list__card-portfolio:hover,
+.header-navigation__list__card-contact:hover {
+    color: $mainblueColorpage;
+} 
+ 
+.header-navigation__list__underscore{ 
+    background-color: $mainblueColorpage;
+}
+
+.header-navigation__list__underscore::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    display: block;
+    width: 53px;
+    height: 4px;
+    background-color: $mainblueColorpage; 
+}  

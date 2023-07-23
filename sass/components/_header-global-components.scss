@@ -1,0 +1,22 @@
+
+.container-header{ 
+
+        width: 1600px;
+        height: 80px;
+        margin: auto;  
+         
+        border: 1px solid $mainwhiteColor;
+
+    &__navigation {  
+        width: 1600px;
+        height: 80px;
+        display: flex;
+       
+        align-items: baseline;
+        margin-left: 0;
+        padding: 0;
+
+    }
+}        
+
+

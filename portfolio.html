@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="./css/page-layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
@@ -15,34 +14,36 @@
 </head>
 <body> 
     <header>
-        <div class="container">
-            <div class="navigation-list">
-                <div class="container-logo">
-                    <a class="brand-logo" href="./index.html"><span class="first-half-webstudio">Web</span><span
-                            class="second-half-webstudio">Studio</span></a>
+        <div class="container-header">
+            <div class="container-header__navigation">
+                <div class="header__logo">
+                    <a class="header__logo__brand" href="./index.html"><span
+                            class="header__logo__brand--part1">Web</span><span
+                            class="header__logo__brand--part2">Studio</span></a>
                 </div>
-                <nav>
-                    <ul class="link">
-                        <li><a class="link-style-agency" href="./index.html">Agencja</a></li>
-                        <li> 
-                            <a class="link-style-portfolio" href="./portfolio.html">Portfolio</a>  
-                            <div class="underscore"></div>
+                <nav class="header-navigation">
+                    <ul class="header-navigation__list">
+                        <li>
+                            <a class="header-navigation__list__card-agency" href="./index.html">Agencja</a>
                         </li>
-                        <li><a class="link-style-contact" href="#">Kontakt</a></li>
+                        <li>  
+                            <div class="header-navigation__list__underscore"></div>
+                            <a class="header-navigation__list__card-portfolio" href="./portfolio.html">Portfolio</a></li>   
+                        <li><a class="header-navigation__list__card-contact" href="#">Kontakt</a></li>
                     </ul>
                 </nav>
-                <div class="contact-link">
-                    <div class="hover-header-mail">
-                        <svg class="header-svg-mail" width="16" height="12">
+                <div class="header-contact">
+                    <div class="header-contact__icon">
+                        <svg class="header-contact__icon--mail" width="16" height="12">
                             <use href="./images/images4/symbol-defs.svg#icon-envelope"></use>
                         </svg>
-                        <a class="link-contact-mail-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="header-contact__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </div>
-                    <div class="hover-header-phone">
-                        <svg class="header-svg-phone" width="10" height="16">
+                    <div class="header-contact__icon">
+                        <svg class="header-contact__icon--phone" width="10" height="16">
                             <use href="./images/images4/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
-                        <a class="link-contact-phone-header" href="tel:+48111111111">+48 111 111 111</a>
+                        <a class="header-contact__link--phone" href="tel:+48111111111">+48 111 111 111</a>
                     </div>
                 </div>
             </div>
@@ -51,21 +52,21 @@
     <main>  
         <!--przyciski nad zdjęciami-->  
         <div class="container-portfolio"> 
-            <ul class="list-bth">
+            <ul class="portfolio-list-bth">
                 <li> 
-                    <button class="bth2" type="button">Wszystkie</button>
+                    <button class="portfolio-bth" type="button">Wszystkie</button>
                 </li>
                 <li> 
-                    <button class="bth2" type="button">Strony</button>
+                    <button class="portfolio-bth" type="button">Strony</button>
                 </li>
                 <li> 
-                    <button class="bth2" type="button">Aplikacje</button>
+                    <button class="portfolio-bth" type="button">Aplikacje</button>
                 </li>
                 <li>
-                    <button class="bth2" type="button">Dizajn</button>
+                    <button class="portfolio-bth" type="button">Dizajn</button>
                 </li>
                 <li> 
-                    <button class="bth2" type="button">Marketing</button>
+                    <button class="portfolio-bth" type="button">Marketing</button>
                 </li>
             </ul>
             <!--Lista ze zdjęciami-->   
@@ -236,74 +237,76 @@
             </div>
         </div>
     </main> 
-<footer>
-    <div class="container-footer1">
+    <footer>
         <div class="container-footer">
-            <a class="brand-logo-footer" href="./index.html"><span class="first-half-webstudio">Web</span><span
-                    class="second-half-webstudio2">Studio</span></a>
-            <address class="box-footer">
-                <ul class="list-adress">
-                    <li class="list-adress-maps"><a class="adress-footer1" href="https://goo.gl/maps/7ZxhDKWCxvy8bxdD8">
-                            m. Warszawa, Aleje Jerozolimskie 21</a></li>
-                    <li class="list-adress-mail"><a class="adress-footer1"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="list-adres-tel"><a class="adress-footer1" href="tel:+48111111111">+48 111 111 111</a>
-                    </li>
-                </ul>
-            </address>
-        </div>
-        <div class="socials-footer-flex">
-            <h5 class="join-us">Dołącz do nas</h5>
-            <div class="social-link-footer">
-                <a href="https://www.instagram.com/" class="social-link-icon-footer" target="_blank"
-                    rel="noreferrer noopener">
-                    <svg width="20" height="20">
-                        <use href="./images/images4/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                </a>
+            <div class="container-footer__contact">
+                <a class="brand-logo-footer" href="./index.html"><span
+                        class="brand-footer__first-half-webstudio">Web</span><span
+                        class="brand-footer__second-half-webstudio">Studio</span></a>
+                <address class="box-adress-footer">
+                    <ul class="list-adress-footer">
+                        <li class="list-adress-footer__maps"><a class="adress-footer1"
+                                href="https://goo.gl/maps/7ZxhDKWCxvy8bxdD8"> m. Warszawa, Aleje Jerozolimskie 21</a></li>
+                        <li class="list-adress-footer__mail"><a class="adress-footer1"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="list-adres-footer__tel"><a class="adress-footer1" href="tel:+48111111111">+48 111 111
+                                111</a></li>
+                    </ul>
+                </address>
             </div>
-            <div class="social-link-footer">
-                <a href="https://twitter.com/" class="social-link-icon-footer" target="_blank"
-                    rel="noreferrer noopener">
-                    <svg width="20" height="20">
-                        <use href="./images/images4/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="social-link-footer">
-                <a href="https://www.facebook.com/" class="social-link-icon-footer" target="_blank"
-                    rel="noreferrer noopener">
-                    <svg width="20" height="20">
-                        <use href="./images/images4/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="social-link-footer">
-                <a href="https://www.linkedin.com/" class="social-link-icon-footer" target="_blank"
-                    rel="noreferrer noopener">
-                    <svg width="20" height="20">
-                        <use href="./images/images4/symbol-defs.svg#icon-linkedin2"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="footer-newsletter">
-            <p class="text-newsletter-footer">Zapisz się do newslettera</p>
-            <div class="box-send-newsletter">
-                <form>
-                    <label class="email-window-footer" for="email">
-                        <input type="email" name="email" id="newsletter-email" placeholder="E-mail" required>
-                    </label>
-                </form>
-                <div class="buttom-send-newsletter">
-                    <button data-modal-open class="button-newsletter" type="submit">Zapisz się</button>
-                    <svg class="send-icon-button" width="24px" height="24px">
-                        <use href="/goit-markup-hw-06/images/images4/symbol-defs-icon-reg.svg#icon-icon-send"></use>
-                    </svg>
+            <div class="social-footer-flex">
+                <h5 class="join-us">Dołącz do nas</h5>
+                <div class="social-link-footer">
+                    <a href="https://www.instagram.com/" class="social-link-icon-footer" target="_blank"
+                        rel="noreferrer noopener">
+                        <svg width="20" height="20">
+                            <use href="./images/images4/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-link-footer">
+                    <a href="https://twitter.com/" class="social-link-icon-footer" target="_blank"
+                        rel="noreferrer noopener">
+                        <svg width="20" height="20">
+                            <use href="./images/images4/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-link-footer">
+                    <a href="https://www.facebook.com/" class="social-link-icon-footer" target="_blank"
+                        rel="noreferrer noopener">
+                        <svg width="20" height="20">
+                            <use href="./images/images4/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-link-footer">
+                    <a href="https://www.linkedin.com/" class="social-link-icon-footer" target="_blank"
+                        rel="noreferrer noopener">
+                        <svg width="20" height="20">
+                            <use href="./images/images4/symbol-defs.svg#icon-linkedin2"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
-
+            <div class="footer-newsletter">
+                <p class="footer-newsletter__text">Zapisz się do newslettera</p>
+                <div class="footer-newsletter__box-send">
+                    <form>
+                        <label class="footer-email-window" for="email">
+                            <input class="footer-email-window__input" type="email" name="email" id="newsletter-email"
+                                placeholder="E-mail" required>
+                        </label>
+                    </form>
+                    <div class="footer-buttom-send-newsletter">
+                        <button data-modal-open class="buttom-newsletter" type="submit">Zapisz się</button>
+                        <svg class="send-icon-buttom" width="24px" height="24px">
+                            <use href="/goit-markup-hw-06/images/images4/symbol-defs-icon-reg.svg#icon-icon-send"></use>
+                        </svg>
+                    </div>
+                </div>
+    
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>

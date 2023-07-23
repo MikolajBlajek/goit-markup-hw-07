@@ -1,7 +1,46 @@
 @import './utils/vars';
 @import './components/page-indexbody';
-@import './components/header-components';
+ 
 
-body {
-    font-family: $font-family;
-}
+
+@import './components/home-form-components'; 
+
+
+
+@import './components/body-global-components'; 
+
+/*===header components===*/ 
+@import './components/header-global-components'; 
+@import './components/header-brandlogo-components';  
+@import './components/header-navigation-components'; 
+@import './components/header-contact-components';   
+ 
+/*===footer components===*/
+@import './components/footer-components';
+@import './components/footer-brandlogo-components';
+@import './components/footer-social-components';
+@import './components/footer-newsletter-components';
+
+/*===page components===*/
+@import './components/page1-main-business-components'; 
+@import './components/page1-main-atuts-components'; 
+@import './components/page1-main-expert-components';
+@import './components/page1-main-team-components';  
+@import './components/page1-main-client-components';  
+
+@import './components/page2-main-global-components'; 
+@import './components/page2-main-buttom-components'; 
+@import './components/page2-main-works-components';
+ 
+  
+
+
+
+
+
+
+
+
+
+
+  

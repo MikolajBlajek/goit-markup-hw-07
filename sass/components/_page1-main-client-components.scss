@@ -1,0 +1,40 @@
+.customers__header{ 
+    font-size: 36px;
+}
+
+.customers{
+    width: 1170px;
+    height: 184px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 94px; 
+    margin-bottom: 94px;
+
+    &__header{ 
+        text-align: center;
+    } 
+        
+    &__list{    
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        padding-left: 0;
+
+        .our-customers{ 
+        border-radius: 4px;     
+        border: 1px solid $ourcustomersgraycolor;   
+        }
+    }
+} 
+ 
+.our-customers > svg{ 
+    fill: $ourcustomersgraycolor;
+} 
+
+.our-customers:hover,
+.our-customers:hover >svg{ 
+    fill: $mainblueColorpage; 
+    border-color: $mainblueColorpage;
+}
+  

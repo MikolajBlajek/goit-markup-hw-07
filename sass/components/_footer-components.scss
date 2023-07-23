@@ -1,0 +1,48 @@
+
+footer {
+    width: 1600px;
+    height: 252px;
+    background-color: $footerbackgroundcolor;
+ }
+ 
+ .container-footer{
+        display: flex;
+        margin-right: 170px;
+        align-items: center; 
+
+     &__contact{ 
+        width: 340px;
+        margin-left: 215px;
+        padding-top: 60px; 
+         
+        .box-adress-footer{ 
+            width: 270px;
+            height: 81px;
+
+            .list-adress-footer{  
+                display: block;
+                padding-left: 0;
+                padding-right: auto; 
+                list-style-type: none; 
+        
+                &__maps{} 
+                 
+                &__mail{} 
+                 
+                &__tel{} 
+                 
+                .adress-footer1{ 
+                    text-decoration: none;  
+                     
+                    font-style: normal;
+                    color: $maingrayColor;
+                    font-family: Raleway;
+                    line-height: 24px;
+                    letter-spacing: 0.42px;
+                    font-size: 14px;
+                }
+            }
+        }
+     }
+} 
+  

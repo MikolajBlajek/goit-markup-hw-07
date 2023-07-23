@@ -1,0 +1,35 @@
+.portfolio-list-bth {
+    list-style-type: none;
+
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    padding-left: 0px;
+    width: 572px;
+    height: 54px;
+    letter-spacing: 0.03em;
+    justify-content: center;
+
+    .portfolio-bth {
+        cursor: pointer;
+        border-radius: 4px;
+        width: 121px;
+        height: 38px; 
+         
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.88em;
+        background-color: $backgroundcolorourteam;
+        color: $mainblackColorpage; 
+        border-color: $backgroundcolorourteam;
+
+    }
+} 
+ 
+.portfolio-bth:hover {
+    background-color: $mainblueColorpage;
+    color: $mainwhiteColor;
+}

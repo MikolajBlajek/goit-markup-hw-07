@@ -1,0 +1,34 @@
+.header__logo{  
+    width: 145px;
+    height: 31px;
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 215px;
+     
+    &__brand{  
+        text-decoration: none;
+        display: flex;
+         
+        &--part1{  
+            display: inline-block;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 2.25em;
+            letter-spacing: 0.03em;
+            font-family: Raleway;
+            color: $mainblueColorpage;
+
+        } 
+         
+        &--part2{ 
+            display: inline-block;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 2.25em;
+            letter-spacing: 0.03em;
+            font-family: Raleway;
+            color: $mainblackColorpage;
+
+        }
+    }
+}

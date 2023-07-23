@@ -1,0 +1,31 @@
+.social-footer-flex {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.join-us {
+    display: block;
+    color: $mainwhiteColor;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+}
+
+.social-link-footer {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    fill: $mainwhiteColor;
+    background-color: $socialiconbackgroundcolorfooter;
+}
+
+.social-link-icon-footer {
+    fill: $mainwhiteColor;
+} 
+
+.social-link-footer:hover {
+    background-color: $mainblueColorpage;
+}

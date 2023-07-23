@@ -1,0 +1,50 @@
+.header-contact{  
+     
+    &__icon{  
+        display: inline;
+        margin-right: 30px;
+
+        &--mail{  
+            display: inline;
+            margin-right: 10px;
+
+        } 
+         
+        .header-contact__link--mail{  
+            display: inline;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 0.88em;
+            letter-spacing: 0.03em; 
+            color: $maingrayColor;
+
+        } 
+
+
+        &--phone{ 
+            display: inline;
+            margin-right: 10px;
+
+        } 
+         
+        .header-contact__link--phone{ 
+            display: inline;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 0.88em;
+            letter-spacing: 0.03em; 
+            color: $maingrayColor;
+
+        }
+    }  
+} 
+   
+.header-contact__icon:hover,  
+.header-contact__link--mail:hover, 
+.header-contact__link--phone:hover{ 
+    color: $mainblueColorpage; 
+    fill: $mainblueColorpage;
+}
+ 

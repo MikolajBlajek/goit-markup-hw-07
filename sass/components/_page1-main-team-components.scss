@@ -1,0 +1,61 @@
+.team-box{ 
+    background-color: $backgroundcolorourteam;    
+}  
+
+.team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.63em;
+    letter-spacing: 0.03em;
+    text-align: center;
+} 
+
+ 
+.team__list{ 
+    display: flex;
+    text-align: center;
+    margin-top: 0px;
+    padding-left: 215px;
+    padding-bottom: 94px;
+    list-style-type: none;
+
+    &-images{ 
+        margin-right: 30px; 
+        border-radius: 0px 0px 4px 4px;   
+        background-color: $mainwhiteColor; 
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);  
+    } 
+ 
+    &-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18em;
+        letter-spacing: 0.03em;
+    } 
+     
+    &-expert{ 
+        font-size: 16px;
+        line-height: 1.18em;
+        letter-spacing: 0.03em; 
+        color: $maingrayColor; 
+     
+    }
+} 
+
+.team__social-link{ 
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    fill: $maingrayColor;
+     
+    .social-link-icon{}
+} 
+
+.team__social-link:hover{ 
+    background-color: $mainblueColorpage; 
+    fill: $mainwhiteColor;
+}
