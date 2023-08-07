@@ -7,7 +7,9 @@
     font-size: 36px;
     line-height: 2.63em;
     letter-spacing: 0.03em;
-    text-align: center;
+    text-align: center;  
+    color: $mainblackColorpagere;
+
 } 
 
  
@@ -30,7 +32,8 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18em;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.03em; 
+        color: $mainblackColorpage;
     } 
      
     &-expert{ 
@@ -52,10 +55,11 @@
     margin-bottom: 20px; 
     fill: $maingrayColor;
      
-    .social-link-icon{}
+} 
+ 
+#icon-instagram-team {
 } 
 
-.team__social-link:hover{ 
-    background-color: $mainblueColorpage; 
-    fill: $mainwhiteColor;
+.team__social-link:hover{
+ 
 }
